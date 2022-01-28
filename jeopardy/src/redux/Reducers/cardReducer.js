@@ -1,7 +1,7 @@
 
 import { data as cards } from '../../data'
 
-const initialState = { cards }
+const initialState = { cards, score: 0 }
 
 export const cardReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -15,7 +15,7 @@ export const cardReducer = (state = initialState, action) => {
                 isCorrect: true
               }
 
-            } return { ...topic, isCorrect: false }
+            } return { ...topic, isCorrect: null }
           }
           return topic
         })
