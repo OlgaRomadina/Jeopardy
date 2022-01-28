@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Card(props) {
+function Card({ object }) {
+
+  const navigation = useNavigate()
   return (
-    <div>
-      
+    <div onClick={()=> navigation(`/question/${object.id}`)}>
+      {object.score}
     </div>
   );
 }
