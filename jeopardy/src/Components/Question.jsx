@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 // import { useParams } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux';
+import { addAnswer } from '../redux/Reducers/AC/addAnswerAC.js'
 
 function Question(props) {
   // const { id } = useParams();
