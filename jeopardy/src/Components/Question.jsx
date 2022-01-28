@@ -12,17 +12,14 @@ function Question(props) {
   useEffect(() => {
     console.log(currentQuestion.question);
   })
-  // const dispatch = useDispatch()
-  // const currentQuestion = {
-  //   question: 'QUESTIONQUES TIONQUESTIONQUESTIONQUESTI ONQUESTIONQUESTIONQUESTIONQU ESTIONQUESTIONQU ESTIONQUEST IONQUESTIONQUESTI ONQUESTIONQUESTIONQUES TIONQUES TIONQUESTION',
-  //   answer: 'ANSWERANSWERANSWER',
-  //   point: 300,
-  //   status: 'new'
-  // }
+
   const answerRef = useRef();
   const inputHandler = () => {
     const answer = answerRef.current.value;
-    console.log(answer);
+    
+    if (answer.toLowerCase() === currentQuestion.answer.toLowerCase()) {
+      console.log(true);
+    }
     // dispatch(addAnswer(answer))
   }
 
