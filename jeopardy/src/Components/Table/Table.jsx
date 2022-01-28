@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 // import Row from '../Row/Row.jsx';
 import Card from '../Card/Card';
+import Score from '../Score/Score';
 
 
 function Table(props) {
@@ -18,7 +19,10 @@ function Table(props) {
       {japan.length && japan.map((el) => <Card object={el} key={el.id}/>)}
       {literature.length && literature.map((el) => <Card object={el} key={el.id}/>)}
       {sailing.length && sailing.map((el) => <Card object={el} key={el.id}/>)}
+      <Score />
     </div>
+
+  
   );
 }
 
