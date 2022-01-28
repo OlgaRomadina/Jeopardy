@@ -35,6 +35,7 @@ export const cardReducer = (state = initialState, action) => {
         console.log()
         return {
           ...state, 
+          score: (state.score - action.payload.score),
           cards: state.cards.map( (card) => {
             if (card.id == action.payload.id) {
               return {...card, isCorrect: false } 
