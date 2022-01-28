@@ -2,8 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 // import Row from '../Row/Row.jsx';
 import Card from '../Card/Card';
-import './Table.css'
 
+import './Table.css'
+import Score from '../Score/Score';
 
 function Table(props) {
 
@@ -15,6 +16,7 @@ function Table(props) {
 
   return (
     <div>
+
       <h1>СВОЯ ИГРА</h1>
       <div >
         <table>
@@ -40,7 +42,10 @@ function Table(props) {
           </tbody>
         </table>
       </div>
+     
+      <Score />
     </div>
+ 
   );
 }
 

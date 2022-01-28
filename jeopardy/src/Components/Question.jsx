@@ -1,29 +1,27 @@
 import React, { useEffect, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import {
   useSelector,
   useDispatch
 } from 'react-redux';
-// import { addAnswer } from '../redux/Reducers/AC/addAnswerAC.js'
+import { correctAnswerAC, notCorrectAnswerAC } from '../redux/Reducers/AC/AC.js'
 
 function Question(props) {
   const { id } = useParams();
   const currentQuestion = useSelector(state => state.cards.cards).find(el => el.id === +id);
+  const navigation = useNavigate()
   useEffect(() => {
     console.log(currentQuestion.question);
   })
-  // const dispatch = useDispatch()
-  // const currentQuestion = {
-  //   question: 'QUESTIONQUES TIONQUESTIONQUESTIONQUESTI ONQUESTIONQUESTIONQUESTIONQU ESTIONQUESTIONQU ESTIONQUEST IONQUESTIONQUESTI ONQUESTIONQUESTIONQUES TIONQUES TIONQUESTION',
-  //   answer: 'ANSWERANSWERANSWER',
-  //   point: 300,
-  //   status: 'new'
-  // }
+  const dispatch = useDispatch()
   const answerRef = useRef();
   const inputHandler = () => {
     const answer = answerRef.current.value;
-    console.log(answer);
-    // dispatch(addAnswer(answer))
+    
+    if (answer.toLowerCase() === currentQuestion.answer.toLowerCase()) {
+      dispatch(correctAnswerAC({score: currentQuestion.score, id: currentQuestion.id }));
+      return navigation(`/`);
+    } dispatch(notCorrectAnswerAC(id));
   }
 
 
