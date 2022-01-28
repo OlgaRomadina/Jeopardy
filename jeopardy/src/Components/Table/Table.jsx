@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 // import Row from '../Row/Row.jsx';
 import Card from '../Card/Card';
+import './Table.css'
 
 
 function Table(props) {
@@ -14,10 +15,31 @@ function Table(props) {
 
   return (
     <div>
-      <h1>JEOPARDY</h1>
-      {japan.length && japan.map((el) => <Card object={el} key={el.id}/>)}
-      {literature.length && literature.map((el) => <Card object={el} key={el.id}/>)}
-      {sailing.length && sailing.map((el) => <Card object={el} key={el.id}/>)}
+      <h1>СВОЯ ИГРА</h1>
+      <div >
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                {japan[0].topic}
+              </td>
+              {japan.map((el) => <td><Card object={el} key={el.id} /></td>)}
+            </tr>
+            <tr>
+              <td>
+                {literature[0].topic}
+              </td>
+              {literature.map((el) => <td><Card object={el} key={el.id} /></td>)}
+            </tr>
+            <tr>
+              <td>
+                {sailing[0].topic}
+              </td>
+              {sailing.map((el) => <td><Card object={el} key={el.id} /></td>)}
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
