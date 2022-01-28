@@ -18,9 +18,8 @@ function Question(props) {
     const answer = answerRef.current.value;
     
     if (answer.toLowerCase() === currentQuestion.answer.toLowerCase()) {
-      console.log(true);
-    }
-    // dispatch(addAnswer(answer))
+      return dispatch(correctAnswerAC(id));
+    } dispatch(notCorrectAnswerAC(id));
   }
 
 
@@ -39,4 +38,4 @@ function Question(props) {
   );
 }
 
-// export default Question;
+export default Question;

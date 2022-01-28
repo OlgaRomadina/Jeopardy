@@ -5,7 +5,7 @@ export const data =
       topic: "Япония",
       question: "Ритуальное самоубийство методом вспарывания живота, принятое среди самурайского сословия средневековой Японии",
       answer: "Харакири",
-      isCorrect: false,
+      isCorrect: null,
       score: 100,
       modal: false
     },
@@ -14,7 +14,7 @@ export const data =
       topic: "Япония",
       question: "Действующий стратовулкан на японском острове Хонсю в 90 километрах к юго-западу от Токио",
       answer: "Фудзияма",
-      isCorrect: false,
+      isCorrect: null,
       score: 300,
       modal: false
     },
@@ -23,7 +23,7 @@ export const data =
       topic: "Япония",
       question: "Японское произношение традиционного китайского пожелания долголетия, на русский может переводиться как «Да здравствует!»",
       answer: "Банзай",
-      isCorrect: false,
+      isCorrect: null,
       score: 500,
       modal: false
     },
@@ -32,7 +32,7 @@ export const data =
       topic: "Япония",
       question: "В японской истории так назывались люди, которые управляли Японией большую часть времени с 1192 года до реставрации Мэйдзи, произошедшей в 1868 году",
       answer: "Сёгун",
-      isCorrect: false,
+      isCorrect: null,
       score: 1000,
       modal: false
     },
@@ -41,7 +41,7 @@ export const data =
       topic: "Литература",
       question: "Главным антагонистом какого романа был кардинал Ришелье?",
       answer: "Восьмеричной",
-      isCorrect: false,
+      isCorrect: null,
       score: 100,
       modal: false
     },
@@ -50,7 +50,7 @@ export const data =
       topic: "Литература",
       question: "Древнегреческий поэт-сказитель, создатель эпических поэм «Илиада» и «Одиссея». Предположительно, был рапсодом. Примерно половина найденных древнегреческих литературных папирусов — отрывки именно сочинений",
       answer: "Гомер",
-      isCorrect: false,
+      isCorrect: null,
       score: 300,
       modal: false
     },
@@ -59,7 +59,7 @@ export const data =
       topic: "Литература",
       question: "Обедневший дворянин из Ла-Манчи, сойдя с ума от круглосуточного чтения рыцарских романов и отсутствия свежего воздуха, возжелал стать странствующим рыцарем",
       answer: "Дон Кихот",
-      isCorrect: false,
+      isCorrect: null,
       score: 500,
       modal: false
     },
@@ -68,7 +68,7 @@ export const data =
       topic: "Литература",
       question: "Французский писатель, классик приключенческой литературы, один из основоположников жанра научной фантастики, гуманист. Член Французского Географического общества. По статистике ЮНЕСКО, книги данного автора занимают второе место по переводимости в мире, уступая лишь произведениям Агаты Кристи",
       answer: "Потому что они сидят перед открытыми окнами",
-      isCorrect: false,
+      isCorrect: null,
       score: 1000,
       modal: false
     },
@@ -77,7 +77,7 @@ export const data =
       topic: "Мореплавание",
       question: "Английский военный моряк, путешественник-исследователь, картограф и первооткрыватель, член Королевского общества и капитан Королевских ВМС. Возглавлял три кругосветные экспедиции по исследованию Мирового океана, но в обществе он знаменит тем, что якобы был съеден гавайскими аборигенами",
       answer: "Джеймс Кук",
-      isCorrect: false,
+      isCorrect: null,
       score: 100,
       modal: false
     },
@@ -86,7 +86,7 @@ export const data =
       topic: "Мореплавание",
       question: "Человек и пароход",
       answer: "Крузенштерн",
-      isCorrect: false,
+      isCorrect: null,
       score: 300,
       modal: false
     },
@@ -95,7 +95,7 @@ export const data =
       topic: "Мореплавание",
       question: "Норвежский полярный путешественник-исследователь и рекордсмен, «Наполеон полярных стран» по выражению Роланда Хантфорда. Первый человек побывавший на обоих географических полюсах планеты.",
       answer: "Руаль Амундсен",
-      isCorrect: false,
+      isCorrect: null,
       score: 500,
       modal: false
     },
@@ -104,7 +104,7 @@ export const data =
       topic: "Мореплавание",
       question: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sextant.jpg/800px-Sextant.jpg",
       answer: "Секстант",
-      isCorrect: false,
+      isCorrect: null,
       score: 1000,
       modal: false
     }
