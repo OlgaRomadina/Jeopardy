@@ -11,13 +11,13 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-      
+
         <section className="container">
           <Routes>
 
             <Route path='/' element={<Table />} />
             <Route path='/question/:id' element={<Question />} />
-            
+
           </Routes>
         </section>
 
