@@ -1,20 +1,24 @@
-import React, { useRef } from 'react';
-// import { useParams } from 'react-router-dom';
-// import { 
-//   useSelector, 
-// useDispatch } from 'react-redux';
+import React, { useEffect, useRef } from 'react';
+import { useParams } from 'react-router-dom';
+import {
+  useSelector,
+  useDispatch
+} from 'react-redux';
 // import { addAnswer } from '../redux/Reducers/AC/addAnswerAC.js'
 
 function Question(props) {
-  //   const { id } = useParams();
-  //   const currentQuestion = useSelector(state => state.questions).filter(el => el.id === +id);
+  const { id } = useParams();
+  const currentQuestion = useSelector(state => state.cards.cards).find(el => el.id === +id);
+  useEffect(() => {
+    console.log(currentQuestion.question);
+  })
   // const dispatch = useDispatch()
-  const currentQuestion = {
-    question: 'QUESTIONQUES TIONQUESTIONQUESTIONQUESTI ONQUESTIONQUESTIONQUESTIONQU ESTIONQUESTIONQU ESTIONQUEST IONQUESTIONQUESTI ONQUESTIONQUESTIONQUES TIONQUES TIONQUESTION',
-    answer: 'ANSWERANSWERANSWER',
-    point: 300,
-    status: 'new'
-  }
+  // const currentQuestion = {
+  //   question: 'QUESTIONQUES TIONQUESTIONQUESTIONQUESTI ONQUESTIONQUESTIONQUESTIONQU ESTIONQUESTIONQU ESTIONQUEST IONQUESTIONQUESTI ONQUESTIONQUESTIONQUES TIONQUES TIONQUESTION',
+  //   answer: 'ANSWERANSWERANSWER',
+  //   point: 300,
+  //   status: 'new'
+  // }
   const answerRef = useRef();
   const inputHandler = () => {
     const answer = answerRef.current.value;
@@ -24,14 +28,14 @@ function Question(props) {
 
 
   return (
-    <div class="container">
-      <div class="row" style={{ marginTop: '50px' }}>
-        <div class="s10">{currentQuestion.question}</div>
+    <div className="container">
+      <div className="row" style={{ marginTop: '50px' }}>
+        <div className="s10">{currentQuestion.question}</div>
 
-        <div class="input-field col s10" style={{ margin: '20px' }}>
-          <input id="answer" type="text" ref={answerRef} class="validate" />
-          <label class="active" htmlFor="answer">Ответ</label>
-          <button class="waves-effect waves-light btn" onClick={inputHandler}>"Это окончательный ответ"</button>
+        <div className="input-field col s10" style={{ margin: '20px' }}>
+          <input id="answer" type="text" ref={answerRef} className="validate" />
+          <label className="active" htmlFor="answer">Ответ</label>
+          <button className="waves-effect waves-light btn" onClick={inputHandler}>"Это окончательный ответ"</button>
         </div>
       </div>
     </div >
