@@ -21,7 +21,8 @@ function Question(props) {
     if (answer.toLowerCase() === currentQuestion.answer.toLowerCase()) {
       dispatch(correctAnswerAC({score: currentQuestion.score, id: currentQuestion.id }));
       return navigation(`/`);
-    } dispatch(notCorrectAnswerAC(id));
+    } dispatch(notCorrectAnswerAC({score: currentQuestion.score, id: currentQuestion.id }));
+    return navigation(`/`);
   }
 
 

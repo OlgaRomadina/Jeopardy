@@ -1,0 +1,9 @@
+.themes {
+  display: 'flex';
+  justify-content: 'space-evenly'
+}
+
+html {
+  background: darkblue;
+  color: yellow
+}
