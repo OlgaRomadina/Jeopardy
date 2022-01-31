@@ -23,3 +23,8 @@ html {
 .link {
   cursor: pointer;
 }
+
+.color {
+  color: yellow;
+  font-weight: bold;
+}
