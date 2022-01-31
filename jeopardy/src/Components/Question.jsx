@@ -10,9 +10,7 @@ function Question(props) {
   const { id } = useParams();
   const currentQuestion = useSelector(state => state.cards.cards).find(el => el.id === +id);
   const navigation = useNavigate()
-  useEffect(() => {
-    console.log(currentQuestion.question);
-  })
+
   const dispatch = useDispatch()
   const answerRef = useRef();
   const inputHandler = () => {
