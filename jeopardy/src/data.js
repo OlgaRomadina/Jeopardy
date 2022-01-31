@@ -102,7 +102,7 @@ export const data =
     {
       id: 12,
       topic: "Мореплавание",
-      question: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sextant.jpg/800px-Sextant.jpg",
+      question: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sextant.jpg/800px-Sextant.jpg" style={{width:'500px', height:'500px', display:'block', marginLeft:'auto', marginRight:'auto' }} />,
       answer: "Секстант",
       isCorrect: null,
       score: 1000,
