@@ -30,7 +30,7 @@ function Question(props) {
         <div className="s10">{currentQuestion.question}</div>
 
         <div className="input-field col s10" style={{ margin: '20px' }}>
-          <input id="answer" type="text" ref={answerRef} className="validate" />
+          <input id="answer" type="text" ref={answerRef} className="validate color" />
           <label className="active" htmlFor="answer">Ответ</label>
           <button className="waves-effect waves-light btn" onClick={inputHandler}>"Это окончательный ответ"</button>
         </div>
